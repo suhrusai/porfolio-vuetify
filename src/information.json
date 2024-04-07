@@ -1,0 +1,19 @@
+{
+    "Overview" : "A computer science grad professional. I am a hunger for learning, self improvement and always have a willingness to accept constructive criticism, able to work as both a self guided or as in team member. I enjoy creating great products and working in a dynamic environment with a focus on good development practices, automation. My ideal world would be computers helping humans in every way to make every human life on earth pleasant as possible.",
+    "Education" : [
+        {
+            "CollegeName": "Osmania University",
+            "GraducationYear" : 2022,
+            "GraducationMonth" : "June",
+            "DegreeName": "B.E Computer Science Engineering",
+            "logoSrc" : "../assets/Osmania_University.webp"
+        },
+        {
+            "CollegeName": "David Eccless school of business- University of Utah",
+            "GraducationYear" : 2024,
+            "GraducationMonth" : "December",
+            "DegreeName": "M.S Information Systems",
+            "logoSrc" : "../assets/David-Eccles-School-of-Business-University-of-Utah.webp"
+        }
+    ]
+}
