@@ -1,5 +1,5 @@
 {
-    "Overview" : "A computer science grad professional. I am a hunger for learning, self improvement and always have a willingness to accept constructive criticism, able to work as both a self guided or as in team member. I enjoy creating great products and working in a dynamic environment with a focus on good development practices, automation. My ideal world would be computers helping humans in every way to make every human life on earth pleasant as possible.",
+    "Overview" : " Hello! I’m Sai Suhrut Sala, a Master’s student in Information Systems at the University of Utah and a Software Engineer with a background in Computer Science from Osmania University. Experienced in full-stack development, I specialize in creating efficient, user-centric solutions using technologies like C#, .NET, and Vue.js. Committed to innovation and efficiency, my work focuses on enhancing technology to improve everyday life. Join me in exploring the potential of technology to transform our world.",
     "Education" : [
         {
             "CollegeName": "Osmania University",
@@ -15,5 +15,21 @@
             "DegreeName": "M.S Information Systems",
             "logoSrc" : "../assets/David-Eccles-School-of-Business-University-of-Utah.webp"
         }
+    ],
+    "Socials": [
+        {
+            "logo" : "mdi-email",
+            "hyperlink": "mailto:saisuhrut@hotmail.com"
+        },
+        {
+            "logo" : "mdi-github",
+            "hyperlink": "https://github.com/suhrusai"
+        },
+        {
+            "logo" : "mdi-linkedin",
+            "hyperlink": "https://www.linkedin.com/in/sai-suhrut-sala/"
+        }
+        
     ]
+
 }

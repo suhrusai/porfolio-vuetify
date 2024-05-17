@@ -8,3 +8,16 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+.profile-pic{
+    border-radius: 500px;
+    margin-bottom: 20px;
+}
+.sky-blue-background{
+        background-color: #87CEEB;
+}
+.socials-icon{
+    color: black
+}
+.socials-icon:hover{
+    color: rgb(53, 53, 53)
+}

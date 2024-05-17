@@ -1,6 +1,9 @@
 <template>
-  <v-container class="fill-height">
-    <Overview></Overview>
+  <v-container :fluid="true">
+    <Suspense>
+      <Overview></Overview>
+    </Suspense>
+
   </v-container>
 </template>
 

@@ -8,9 +8,9 @@
         </v-col>
         <v-col>
             <v-container>
-                <b>{{collegeName}}</b>
-                <p1>{{degree}}</p1>
-                <p1>{{gradYear}}r</p1>
+                <b>{{collegeName}}</b><br>
+                <p>{{degree}}</p><br>
+                <p>{{gradYear}}</p>
             </v-container>
         </v-col>
     </v-row>
@@ -20,7 +20,7 @@
 const props = defineProps(["collegeName","degree","gradYear","logoSrc"])
 const collegeName: string = props.collegeName
 const degree:string = props.degree
-const gradYear: string = props.collegeName
+const gradYear: string = props.gradYear
 const logoSrc: string = props.logoSrc
 var logoImage:any = null;
 await import(logoSrc).then((logo) =>
