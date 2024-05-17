@@ -93,17 +93,11 @@
 </template>
 <script lang="ts" setup>
 import json from '../information.json'
-import profilePicSrc from '../assets/profile_pic.png'
 import EducationCard from './EducationCard.vue';
 import GithubRepos from './GithubRepos.vue'
 const educationInformation = json.Education;
-var profilePic: any = null;
 var socials: any = json.Socials;
 var overview: string = json.Overview
-await import(profilePicSrc).then((image) =>
-{
-    profilePic = image.default;
-})
 </script>
 <style>
 .align-items-center{
