@@ -3,11 +3,22 @@
         <v-row>
             <v-col cols="3">
                 <v-container>
+                    <br>
                     <v-img :src="profilePic" class="profile-pic"> </v-img>
-                    <h1>Sai Suhrut</h1>
-                    <template v-for="social in socials" :key="social">
-                        <a :href="social.hyperlink" class="socials-icon" style="font-size: x-large;" ><v-icon :icon="social.logo"></v-icon></a>
-                    </template>
+                    <div class="d-flex flex-column  align-items-center">
+                        <h1>Sai Suhrut</h1>
+                        <div>
+                            <a :href="social.hyperlink" 
+                                class="socials-icon" 
+                                style="font-size: x-large;"
+                                target="_blank"
+                                v-for="social in socials" :key="social"
+                            >
+                                <v-icon :icon="social.logo" >
+                                </v-icon>
+                            </a>
+                        </div>
+                    </div>
                 </v-container>
             </v-col>
             <v-col>
@@ -56,6 +67,27 @@
                 <v-row>
                     <GithubRepos/>
                 </v-row>
+                <v-row class="mt-10">
+                    <v-container :fluid="true">
+                        <v-row>
+                            <h1>Contact Information</h1>
+                        </v-row>
+                        <v-row>
+                            <div class="d-flex flex-column" >
+                                        <a :href="social.hyperlink" 
+                                            class="socials-icon" 
+                                            style="font-size: x-large;text-decoration: none;"
+                                            target="_blank"
+                                            v-for="social in socials" :key="social"
+                                        >
+                                        <v-icon :icon="social.logo" >
+                                        </v-icon>
+                                        {{social.hyperlink}}
+                                        </a>
+                                    </div>
+                        </v-row>
+                    </v-container>
+                </v-row>
     </v-container>
         
 </template>
@@ -73,3 +105,8 @@ await import(profilePicSrc).then((image) =>
     profilePic = image.default;
 })
 </script>
+<style>
+.align-items-center{
+    align-items: center;
+}
+</style>
