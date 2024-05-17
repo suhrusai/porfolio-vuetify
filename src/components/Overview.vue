@@ -4,7 +4,7 @@
             <v-col cols="3">
                 <v-container>
                     <br>
-                    <v-img :src="profilePic" class="profile-pic"> </v-img>
+                    <v-img src="../assets/profile_pic.png" class="profile-pic"> </v-img>
                     <div class="d-flex flex-column  align-items-center">
                         <h1>Sai Suhrut</h1>
                         <div>

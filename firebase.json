@@ -22,7 +22,7 @@
         "headers": [
           {
             "key": "Content-Type",
-            "value": "image/PNG"
+            "value": "image/png"
           }
         ]
       }
