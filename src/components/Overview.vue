@@ -1,10 +1,10 @@
 <template>
     <v-container>
         <v-row>
-            <v-col cols="3">
-                <v-container>
+            <v-col cols="3" class="profile-picture-section">
+                <v-container  id="overview">
                     <br>
-                    <v-img :src="profilePic" class="profile-pic"> </v-img>
+                    <v-img src="../assets/profile_pic.png" class="profile-pic"> </v-img>
                     <div class="d-flex flex-column  align-items-center">
                         <h1>Sai Suhrut</h1>
                         <div>
@@ -21,7 +21,7 @@
                     </div>
                 </v-container>
             </v-col>
-            <v-col>
+            <v-col cols="9">
                 <v-container>
                     <h1>
                         About
@@ -47,8 +47,8 @@
                         </div>
                     </v-col>
                     <v-col>
-                        <h1 class="ml-4">Education</h1>
-                        <v-container justify="cetner">
+                        <h1>Education</h1>
+                        <v-container :fluid="true" justify="cetner" class="education-section">
                         <Suspense>
                             <EducationCard v-for="education in educationInformation"  
                             :key="education.CollegeName"    
@@ -64,11 +64,11 @@
 
                     </v-col>
                 </v-row>
-                <v-row>
+                <v-row id="repos">
                     <GithubRepos/>
                 </v-row>
                 <v-row class="mt-10">
-                    <v-container :fluid="true">
+                    <v-container :fluid="true"  id="contact">
                         <v-row>
                             <h1>Contact Information</h1>
                         </v-row>
@@ -93,20 +93,22 @@
 </template>
 <script lang="ts" setup>
 import json from '../information.json'
-import profilePicSrc from '../assets/profile_pic.png'
 import EducationCard from './EducationCard.vue';
 import GithubRepos from './GithubRepos.vue'
 const educationInformation = json.Education;
-var profilePic: any = null;
 var socials: any = json.Socials;
 var overview: string = json.Overview
-await import(profilePicSrc).then((image) =>
-{
-    profilePic = image.default;
-})
 </script>
 <style>
 .align-items-center{
     align-items: center;
+}
+</style>
+<style scoped>
+.profile-picture-section{
+    min-width: 250px;
+}
+.education-section{
+    min-width: 350px;
 }
 </style>

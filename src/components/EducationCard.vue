@@ -1,15 +1,14 @@
 <template>
 <v-card>
     <v-row>
-        <v-col cols="3">
-            <v-img :src="logoImage">
-                
+        <v-col cols="4" class="d-flex justify-center align-center">
+            <v-img :src="logoSrc">
             </v-img>
         </v-col>
-        <v-col>
-            <v-container>
-                <b>{{collegeName}}</b><br>
-                <p>{{degree}}</p><br>
+        <v-col class="d-flex flex-column justify-center align-center">
+            <v-container :fluid="true">
+                <b><h3>{{collegeName}}</h3></b>
+                <p>{{degree}}</p> 
                 <p>{{gradYear}}</p>
             </v-container>
         </v-col>
@@ -21,11 +20,4 @@ const props = defineProps(["collegeName","degree","gradYear","logoSrc"])
 const collegeName: string = props.collegeName
 const degree:string = props.degree
 const gradYear: string = props.gradYear
-const logoSrc: string = props.logoSrc
-var logoImage:any = null;
-await import(logoSrc).then((logo) =>
-{
-    logoImage = logo.default;
-}
-)
 </script>
