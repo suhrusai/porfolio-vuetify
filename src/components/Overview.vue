@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row>
-            <v-col cols="3">
+            <v-col cols="3" class="profile-picture-section">
                 <v-container  id="overview">
                     <br>
                     <v-img src="../assets/profile_pic.png" class="profile-pic"> </v-img>
@@ -21,7 +21,7 @@
                     </div>
                 </v-container>
             </v-col>
-            <v-col>
+            <v-col cols="9">
                 <v-container>
                     <h1>
                         About
@@ -47,8 +47,8 @@
                         </div>
                     </v-col>
                     <v-col>
-                        <h1 class="ml-4">Education</h1>
-                        <v-container justify="cetner">
+                        <h1>Education</h1>
+                        <v-container :fluid="true" justify="cetner" class="education-section">
                         <Suspense>
                             <EducationCard v-for="education in educationInformation"  
                             :key="education.CollegeName"    
@@ -102,5 +102,13 @@ var overview: string = json.Overview
 <style>
 .align-items-center{
     align-items: center;
+}
+</style>
+<style scoped>
+.profile-picture-section{
+    min-width: 250px;
+}
+.education-section{
+    min-width: 350px;
 }
 </style>

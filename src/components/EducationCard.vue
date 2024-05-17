@@ -1,15 +1,14 @@
 <template>
 <v-card>
     <v-row>
-        <v-col cols="3">
+        <v-col cols="4" class="d-flex justify-center align-center">
             <v-img :src="logoSrc">
-                
             </v-img>
         </v-col>
-        <v-col>
-            <v-container>
-                <b>{{collegeName}}</b><br>
-                <p>{{degree}}</p><br>
+        <v-col class="d-flex flex-column justify-center align-center">
+            <v-container :fluid="true">
+                <b><h3>{{collegeName}}</h3></b>
+                <p>{{degree}}</p> 
                 <p>{{gradYear}}</p>
             </v-container>
         </v-col>
