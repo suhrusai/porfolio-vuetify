@@ -2,7 +2,7 @@
     <v-container>
         <v-row>
             <v-col cols="3">
-                <v-container>
+                <v-container  id="overview">
                     <br>
                     <v-img src="../assets/profile_pic.png" class="profile-pic"> </v-img>
                     <div class="d-flex flex-column  align-items-center">
@@ -64,11 +64,11 @@
 
                     </v-col>
                 </v-row>
-                <v-row>
+                <v-row id="repos">
                     <GithubRepos/>
                 </v-row>
                 <v-row class="mt-10">
-                    <v-container :fluid="true">
+                    <v-container :fluid="true"  id="contact">
                         <v-row>
                             <h1>Contact Information</h1>
                         </v-row>

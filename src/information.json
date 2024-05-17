@@ -6,14 +6,14 @@
             "GraducationYear" : 2022,
             "GraducationMonth" : "June",
             "DegreeName": "B.E Computer Science Engineering",
-            "logoSrc" : "src/assets/Osmania_University.webp"
+            "logoSrc" : "https://firebasestorage.googleapis.com/v0/b/myportfoliovue.appspot.com/o/Osmania_University.webp?alt=media&token=17de973e-09fc-48f9-ae27-e0c5287cd7cf"
         },
         {
             "CollegeName": "David Eccless school of business- University of Utah",
             "GraducationYear" : 2024,
             "GraducationMonth" : "December",
             "DegreeName": "M.S Information Systems",
-            "logoSrc" : "src/assets/David-Eccles-School-of-Business-University-of-Utah.webp"
+            "logoSrc" : "https://firebasestorage.googleapis.com/v0/b/myportfoliovue.appspot.com/o/David-Eccles-School-of-Business-University-of-Utah.webp?alt=media&token=06045477-8810-4ded-baac-aa047dc6ea8f"
         }
     ],
     "Socials": [
