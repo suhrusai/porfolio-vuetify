@@ -21,8 +21,8 @@
               class="mx-auto"
               min-width="350"
               max-width="350"
-              min-height="150"
-              max-height="150"
+              min-height="200"
+              max-height="200"
               hover
             >
               <v-card-item>

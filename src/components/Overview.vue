@@ -64,6 +64,9 @@
 
                     </v-col>
                 </v-row>
+                <v-row id="projects">
+                    <Projects></Projects>
+                </v-row>
                 <v-row id="repos">
                     <GithubRepos/>
                 </v-row>
@@ -95,6 +98,7 @@
 import json from '../information.json'
 import EducationCard from './EducationCard.vue';
 import GithubRepos from './GithubRepos.vue'
+import Projects from './NotableProjects.vue';
 const educationInformation = json.Education;
 var socials: any = json.Socials;
 var overview: string = json.Overview

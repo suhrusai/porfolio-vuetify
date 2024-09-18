@@ -16,6 +16,34 @@
             "logoSrc" : "https://firebasestorage.googleapis.com/v0/b/myportfoliovue.appspot.com/o/David-Eccles-School-of-Business-University-of-Utah.webp?alt=media&token=06045477-8810-4ded-baac-aa047dc6ea8f"
         }
     ],
+    "Projects": [
+        {
+            "name": "AXIO Centripital Training",
+            "links": [
+                {
+                    "display" : "App store",
+                    "hyperlink": ""
+                },
+                {
+                    "display" : "Play Store",
+                    "hyperlink": ""
+                }
+            ]
+        },
+        {
+            "name": "Birthday Reminder",
+            "links": [
+                {
+                    "display" : "",
+                    "hyperlink": ""
+                },
+                {
+                    "display" : "Play Store",
+                    "hyperlink": ""
+                }
+            ]
+        }
+    ],
     "Socials": [
         {
             "logo" : "mdi-email",
