@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-let sections : String[] = ["overview","repos","contact"]
+let sections : string[] = ["overview","repos","contact"]
 const scrollToSection = (sectionId: string) => {
   const sectionElement = document.getElementById(sectionId);
   if (sectionElement) {

@@ -18,30 +18,116 @@
     ],
     "Projects": [
         {
-            "name": "AXIO Centripital Training",
-            "links": [
+            "name" : "AXIO Centripetal Training",
+            "description" : "AXIO Centripetal Training is a mobile workout application designed to educate and guide AXIO Trainer customers. The project aimed to improve stability, functional strength, and injury prevention through a user-friendly and configurable mobile application. Developed using FlutterFlow, the app features curated workout playlists, a timer, and a robust backend architecture powered by Firebase. The project also included an admin control panel for easy management and maintenance of the contents in the application",
+            "techstack" : {
+                "Front-end" : [ "FlutterFlow","Vue.js", "Vuetify", "HTML", "CSS", "JS"],
+                "Back-end" : ["Flutterflow", "Google cloud functions","Vimeo API"],
+                "Database and storage" : ["Firebase storage","Firebase Firestore","Vimeo"]
+            },
+            "images" : [
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-1.webp",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-2.webp",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-3.webp",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-4.webp",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-5.png",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-6.png",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-7.png",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/axio/axio-8.png"
+              ],
+              "links":[
                 {
-                    "display" : "App store",
-                    "hyperlink": ""
+                    "icon": "https://cdn-icons-png.flaticon.com/512/732/732208.png",
+                    "src" : "https://play.google.com/store/apps/details?id=com.axiocentripetaltraining.axiotrainingmobileapplication&pli=1",
+                    "displayText" : "View on Google Play"
                 },
                 {
-                    "display" : "Play Store",
-                    "hyperlink": ""
+                    "icon": "https://www.apple.com/v/app-store/b/images/overview/icon_appstore__ev0z770zyxoy_large_2x.png",
+                    "src" : "https://apps.apple.com/us/app/axio-centripetal-training/id6550901316",
+                    "displayText" : "View on App Store"
+                    
                 }
-            ]
+              ]
         },
         {
-            "name": "Birthday Reminder",
-            "links": [
+            "name" : "Birthday Reminder Bot and site",
+            "description" : "This project suite consists of a powerful and flexible Birthday Reminder Bot and a Web-Based Birthday Notification System for Discord, designed to enhance user engagement by automating birthday tracking and celebratory notifications. The system combines the strengths of Python, Vue.js, and Firebase to deliver an end-to-end solution that seamlessly integrates with Discord servers, allowing server administrators and community members to manage birthday notifications across multiple channels.",
+            "techstack": {"Front-end" : ["Vue.js", "Vuetify", "HTML", "CSS", "JS"],
+                            "Back-end" : ["Python","Github Actions"],
+                            "Database and storage" : ["Firebase Firestore","Firebase storage"]
+                        },
+            "images" : [
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/birthday-reminder/%20birthday-0.png",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/birthday-reminder/birthday-1.png",
+                "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/birthday-reminder/birthday-2.png",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/birthday-reminder/birthday-3.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/birthday-reminder/birthday-4.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/birthday-reminder/birthday-5.png?raw=true"
+            ],
+            "links":[
                 {
-                    "display" : "",
-                    "hyperlink": ""
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                    "src" : "https://github.com/suhrusai/birthday-notifier",
+                    "displayText" : "Front-end repository"
                 },
                 {
-                    "display" : "Play Store",
-                    "hyperlink": ""
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                    "src" : "https://github.com/suhrusai/b-day-reminder-discord",
+                    "displayText" : "Back-end repository"
+                    
                 }
-            ]
+              ]
+        },
+        {
+            "name" : "LUDO multiplayer",
+            "description": "The Ludo Multiplayer Game brings the classic board game to life in a digital format, allowing players to enjoy the experience with friends or other users online. It supports real-time gameplay, intuitive controls, and a smooth user interface to recreate the traditional feel of the game. Built with technologies like JavaScript, HTML/CSS, and Node.js, this project showcases skills in game development, real-time interaction handling, and creating an engaging user experience.",
+            "images":[
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/ludo/Ludo-ingame.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/ludo/ludo-page-1.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/ludo/ludo-created-room.png?raw=true"
+            ],
+            "techstack": {
+                "Tools/Applications": ["Unity","Photon Unity Netoworking"]
+            },
+            "links":[
+                {
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                    "src" : "https://github.com/suhrusai/ludo-multiplayer",
+                    "displayText" : "Github repo"
+                },
+                {
+                    "icon": "https://i.fbcd.co/products/original/39c0ab5c64fc161428711f93b3c8ba13acc3e829769b49e1b967516828270cde.jpg",
+                    "src" : "https://suhrusai.github.io/LUDO-Multiplayer/WebGL%20Build/",
+                    "displayText" : "Game webpage"
+                    
+                }
+              ]
+        },
+        {
+            "name" : "Monster-chase",
+            "techstack": {
+                "Tools/Applications": ["Unity"]
+            },
+            "description": "\"Monster Chase\" is a 2D game I built in Unity to create an engaging and fun experience for players. I worked on designing smooth animations, dynamic environments, and intuitive controls to ensure the gameplay feels immersive. I wrote custom scripts to handle player and enemy behaviors, developed polished UI elements, and set up animations to bring the game to life. It was a great project to combine creativity with technical problem-solving while delivering a challenging and enjoyable game.",
+            "images":[
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-home.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-how-to-play.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-midgame.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-game-over.png?raw=true"
+            ],
+            "links":[
+                {
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                    "src" : "https://github.com/suhrusai/monster-chase",
+                    "displayText" : "Github repo"
+                },
+                {
+                    "icon": "https://i.fbcd.co/products/original/39c0ab5c64fc161428711f93b3c8ba13acc3e829769b49e1b967516828270cde.jpg",
+                    "src" : "https://suhrusai.github.io/Monster-Chase/",
+                    "displayText" : "Game webpage"
+                    
+                }
+              ]
         }
     ],
     "Socials": [

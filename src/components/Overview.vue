@@ -40,7 +40,7 @@
                         </h1>
                         <br>
                         <div style="font-size: large;">
-                            <p><b>Front End</b>: HMTL, CSS, JavaScript, jQuery, Vue.js, ASP.NET, Bootstrap, Vuetify </p><br>
+                            <p><b>Front End</b>: HTML, CSS, JavaScript, jQuery, Vue.js, ASP.NET, Bootstrap, Vuetify </p><br>
                             <p><b>Back End</b>: .NET Framework, .NET Core, Web API, Python, Node.js </p><br>
                             <p><b>Deployment and Automation</b>: GitHub Actions, PowerShell  </p><br>
                             <p><b>Programming Languages</b>: C#, Java, Python </p><br>
@@ -58,6 +58,7 @@
                             :logo-src="education.logoSrc"
                             class="p-1"
                         >
+
                         </EducationCard>
                         </Suspense>
                         </v-container>
@@ -65,7 +66,11 @@
                     </v-col>
                 </v-row>
                 <v-row id="projects">
-                    <Projects></Projects>
+                    <h1>Projects</h1>
+                    <div v-for="project in projects">
+                        <ProjectCard :project="project"></ProjectCard>
+                    </div>
+
                 </v-row>
                 <v-row id="repos">
                     <GithubRepos/>
@@ -98,8 +103,9 @@
 import json from '../information.json'
 import EducationCard from './EducationCard.vue';
 import GithubRepos from './GithubRepos.vue'
-import Projects from './NotableProjects.vue';
+import ProjectCard from './ProjectCard.vue';
 const educationInformation = json.Education;
+const projects = json.Projects;
 var socials: any = json.Socials;
 var overview: string = json.Overview
 </script>
