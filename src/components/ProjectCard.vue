@@ -38,6 +38,8 @@
           name: string;
           description: string;
           images: string[];
+          techstack : any;
+          links: any;
         },
         required: true,
       },
