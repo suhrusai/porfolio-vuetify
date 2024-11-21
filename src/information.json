@@ -142,8 +142,21 @@
                     
                 }
               ]
+              ]
         },
         {
+            "name" : "Monster-chase",
+            "techstack": {
+                "Tools/Applications": ["Unity"]
+            },
+            "description": "\"Monster Chase\" is a 2D game I built in Unity to create an engaging and fun experience for players. I worked on designing smooth animations, dynamic environments, and intuitive controls to ensure the gameplay feels immersive. I wrote custom scripts to handle player and enemy behaviors, developed polished UI elements, and set up animations to bring the game to life. It was a great project to combine creativity with technical problem-solving while delivering a challenging and enjoyable game.",
+            "images":[
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-home.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-how-to-play.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-midgame.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/monster-chase/Monster-chase-game-over.png?raw=true"
+            ],
+            "links":[
             "name" : "Monster-chase",
             "techstack": {
                 "Tools/Applications": ["Unity"]
@@ -160,13 +173,21 @@
                     "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
                     "src" : "https://github.com/suhrusai/monster-chase",
                     "displayText" : "Github repo"
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                    "src" : "https://github.com/suhrusai/monster-chase",
+                    "displayText" : "Github repo"
                 },
                 {
                     "icon": "https://i.fbcd.co/products/original/39c0ab5c64fc161428711f93b3c8ba13acc3e829769b49e1b967516828270cde.jpg",
                     "src" : "https://suhrusai.github.io/Monster-Chase/",
                     "displayText" : "Game webpage"
                     
+                    "icon": "https://i.fbcd.co/products/original/39c0ab5c64fc161428711f93b3c8ba13acc3e829769b49e1b967516828270cde.jpg",
+                    "src" : "https://suhrusai.github.io/Monster-Chase/",
+                    "displayText" : "Game webpage"
+                    
                 }
+              ]
               ]
         }
     ],
