@@ -46,6 +46,11 @@
                     "src" : "https://apps.apple.com/us/app/axio-centripetal-training/id6550901316",
                     "displayText" : "View on App Store"
                     
+                },
+                {
+                    "icon": "https://cdn-icons-png.flaticon.com/512/2991/2991117.png",
+                    "src" : "https://docs.google.com/presentation/d/1xrLXKGHuvc0nSMvGFyag1cBAEoPhn8lPn8VCpUrlRg8/edit?usp=sharing",
+                    "displayText": "View presentation on slides"
                 }
               ]
         },
@@ -78,6 +83,41 @@
                 }
               ]
         },
+        {
+            "name": "University of Utah Parking System",
+            "description": "This project is a comprehensive parking management system for the University of Utah, built to streamline vehicle registration, permit issuance, and violation tracking. The system is designed for administrators and users with separate modules for effective management and user experience.",
+            "techstack": {
+              "Front-end": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+              "Back-end": ["PHP"],
+              "Database": ["MySQL"]
+            },
+            "images": [
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-login.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-home.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-manage-vehicles.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-new-user.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-outstanding-violations-report.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-system-manage-vehicle-user.png?raw=true",
+                "https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/uofu-parking-system/uofu-parking-system-revenue-violation-report.png?raw=true"
+              ],
+              "links": [
+                {
+                  "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                  "src": "https://github.com/suhrusai/uofu-parking-system",
+                  "displayText": "GitHub Repository"
+                },
+                {
+                  "icon": "https://cdn-icons-png.flaticon.com/512/174/174883.png",
+                  "src": "https://youtu.be/QpaJEaPnEdk",
+                  "displayText": "Project Video"
+                },
+                {
+                  "icon": "https://cdn-icons-png.flaticon.com/512/888/888874.png",
+                  "src": "https://github.com/suhrusai/suhrusai/raw/refs/heads/main/porfolio-images/uofu-parking-system/IS%204460%20Web%20Applications%20Final%20Project%20-%20Team%205.pptx",
+                  "displayText": "Presentation Download"
+                }
+              ]
+        },          
         {
             "name" : "LUDO multiplayer",
             "description": "The Ludo Multiplayer Game brings the classic board game to life in a digital format, allowing players to enjoy the experience with friends or other users online. It supports real-time gameplay, intuitive controls, and a smooth user interface to recreate the traditional feel of the game. Built with technologies like JavaScript, HTML/CSS, and Node.js, this project showcases skills in game development, real-time interaction handling, and creating an engaging user experience.",

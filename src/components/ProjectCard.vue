@@ -39,7 +39,7 @@
           description: string;
           images: string[];
           techstack : any;
-          links: any;
+          links: any
         },
         required: true,
       },
