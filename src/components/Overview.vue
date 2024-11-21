@@ -4,18 +4,24 @@
             <v-col cols="3" class="profile-picture-section">
                 <v-container  id="overview">
                     <br>
-                    <v-img src="../assets/profile_pic.png" class="profile-pic"> </v-img>
+                    <v-img src="https://media.licdn.com/dms/image/v2/D5603AQGsx5NqlNlyaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726630741943?e=1737590400&v=beta&t=kqHmdxkoNBLW44L250UVtB90YsmIaCNp1_XnJetMTI8" class="profile-pic"> </v-img>
                     <div class="d-flex flex-column  align-items-center">
                         <h1>Sai Suhrut</h1>
-                        <div>
+                        <div class="d-flex justify-content-center align-items-center" style="gap: 10px;">
                             <a :href="social.hyperlink" 
-                                class="socials-icon" 
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none" 
+                                style="font-size: 32px;"
+                                target="_blank"
+                                v-for="social in socials" :key="social.hyperlink"
+                            >
+                                <v-icon :icon="social.logo" style="font-size: 40px;"></v-icon>
+                            </a>
+                            <a href="https://github.com/suhrusai/suhrusai/blob/main/resume.pdf?raw=true" 
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none" 
                                 style="font-size: x-large;"
                                 target="_blank"
-                                v-for="social in socials" :key="social"
                             >
-                                <v-icon :icon="social.logo" >
-                                </v-icon>
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135686.png" style="height: 32px; width: 32px;" />
                             </a>
                         </div>
                     </div>
@@ -28,7 +34,7 @@
                     </h1>
                     <br>
                     <p style="font-size: larger">
-                       {{ overview }}
+                    {{ overview }}
                     </p>
                 </v-container>
             </v-col>
@@ -86,7 +92,7 @@
                                             class="socials-icon" 
                                             style="font-size: x-large;text-decoration: none;"
                                             target="_blank"
-                                            v-for="social in socials" :key="social"
+                                            v-for="social in socials" :key="social.hyperlink"
                                         >
                                         <v-icon :icon="social.logo" >
                                         </v-icon>
@@ -100,14 +106,21 @@
         
 </template>
 <script lang="ts" setup>
-import json from '../information.json'
+import { ref } from 'vue';
 import EducationCard from './EducationCard.vue';
-import GithubRepos from './GithubRepos.vue'
+import GithubRepos from './GithubRepos.vue';
 import ProjectCard from './ProjectCard.vue';
-const educationInformation = json.Education;
-const projects = json.Projects;
-var socials: any = json.Socials;
-var overview: string = json.Overview
+
+// Assuming your JSON data is structured according to the PortfolioData interface
+import portfolioData from '../information.json';
+
+const { Overview, Education, Projects, Socials } = portfolioData;
+
+// No need to define variables again, use the destructured properties directly
+const educationInformation = ref(Education);
+const projects = ref(Projects);
+const socials = ref(Socials);
+const overview = ref(Overview);
 </script>
 <style>
 .align-items-center{
