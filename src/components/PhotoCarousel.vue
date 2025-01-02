@@ -28,7 +28,7 @@
             width="100%"
             v-show="!loading[index]"
             v-on:load="onImageLoad(index)"
-          ></img>
+          />
         </div>
       </v-card>
     </v-window-item>

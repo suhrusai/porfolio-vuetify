@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="my-app-container">
         <v-row>
             <v-col cols="3" class="profile-picture-section">
                 <v-container  id="overview">
@@ -73,7 +73,7 @@
                 </v-row>
                 <v-row id="projects">
                     <h1>Projects</h1>
-                    <div v-for="project in projects">
+                    <div v-for="project in projects" :key="project.name">
                         <ProjectCard :project="project"></ProjectCard>
                     </div>
 
@@ -133,5 +133,10 @@ const overview = ref(Overview);
 }
 .education-section{
     min-width: 350px;
+}
+.my-app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
 }
 </style>
