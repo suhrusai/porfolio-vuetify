@@ -75,6 +75,8 @@ export default {
 
       if (response.status === 403 && !useToken) {
         // Retry with token if rate-limited or forbidden
+        console.log("retrying with token")
+        console.log(token)
         return this.fetchWithRetry(url, true);
       }
 
