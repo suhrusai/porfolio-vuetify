@@ -4,7 +4,7 @@
       <v-row class="li-row" align="start">
         <v-col cols="12" md="3" class="li-left d-flex">
           <div class="logo-wrap">
-            <v-img :src="resolveLogo(exp.logo)" :alt="`${exp.company} logo`" contain max-width="56" max-height="56" />
+            <!-- <v-img :src="resolveLogo(exp.logo)" :alt="`${exp.company} logo`" contain max-width="56" max-height="56" /> -->
           </div>
           <div class="company-meta">
             <div><b>{{ exp.company }}</b></div>
@@ -19,7 +19,6 @@
               <div class="pos-head d-flex justify-space-between">
                 <div>
                   <div class="pos-title">{{ pos.title }}</div>
-                  <div v-if="pos.companyNote" class="pos-note grey--text">{{ pos.companyNote }}</div>
                 </div>
                 <div class="pos-date caption grey--text">{{ formatRange(pos.startDate, pos.endDate) }}</div>
               </div>
