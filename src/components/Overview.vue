@@ -8,16 +8,16 @@
                     <div class="d-flex flex-column  align-items-center">
                         <h1>Sai Suhrut</h1>
                         <div class="d-flex justify-content-center align-items-center" style="gap: 10px;">
-                            <a :href="social.hyperlink" 
-                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none" 
+                            <a :href="social.hyperlink"
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none"
                                 style="font-size: 32px;"
                                 target="_blank"
                                 v-for="social in socials" :key="social.hyperlink"
                             >
                                 <v-icon :icon="social.logo" style="font-size: 40px;"></v-icon>
                             </a>
-                            <a href="https://github.com/suhrusai/suhrusai/blob/main/resume.pdf?raw=true" 
-                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none" 
+                            <a href="https://github.com/suhrusai/suhrusai/blob/main/resume.pdf?raw=true"
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none"
                                 style="font-size: x-large;"
                                 target="_blank"
                             >
@@ -56,9 +56,9 @@
                         <h1>Education</h1>
                         <v-container :fluid="true" justify="cetner" class="education-section">
                         <Suspense>
-                            <EducationCard v-for="education in educationInformation"  
-                            :key="education.CollegeName"    
-                            :college-name="education.CollegeName" 
+                            <EducationCard v-for="education in educationInformation"
+                            :key="education.CollegeName"
+                            :college-name="education.CollegeName"
                             :grad-year="education.GraducationYear"
                             v-bind:degree="education.DegreeName"
                             :logo-src="education.logoSrc"
@@ -71,6 +71,12 @@
 
                     </v-col>
                 </v-row>
+                <v-row id="experience">
+                  <h1>Experience</h1>
+                  <div class="w-100">
+                    <ExperienceList :items="experiences" />
+                  </div>
+                </v-row>
                 <v-row id="projects">
                     <h1>Projects</h1>
                     <div v-for="project in projects">
@@ -81,6 +87,7 @@
                 <v-row id="repos">
                     <GithubRepos/>
                 </v-row>
+
                 <v-row class="mt-10">
                     <v-container :fluid="true"  id="contact">
                         <v-row>
@@ -88,8 +95,8 @@
                         </v-row>
                         <v-row>
                             <div class="d-flex flex-column" >
-                                        <a :href="social.hyperlink" 
-                                            class="socials-icon" 
+                                        <a :href="social.hyperlink"
+                                            class="socials-icon"
                                             style="font-size: x-large;text-decoration: none;"
                                             target="_blank"
                                             v-for="social in socials" :key="social.hyperlink"
@@ -103,24 +110,25 @@
                     </v-container>
                 </v-row>
     </v-container>
-        
+
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue';
 import EducationCard from './EducationCard.vue';
 import GithubRepos from './GithubRepos.vue';
 import ProjectCard from './ProjectCard.vue';
-
+import ExperienceList from './ExperienceList.vue';
 // Assuming your JSON data is structured according to the PortfolioData interface
 import portfolioData from '../information.json';
 
-const { Overview, Education, Projects, Socials } = portfolioData;
+const { Overview, Education, Projects, Socials, ExperienceList: ExperienceData } = portfolioData;
 
 // No need to define variables again, use the destructured properties directly
 const educationInformation = ref(Education);
 const projects = ref(Projects);
 const socials = ref(Socials);
 const overview = ref(Overview);
+const experiences = ref(ExperienceData);
 </script>
 <style>
 .align-items-center{

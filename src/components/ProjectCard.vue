@@ -7,7 +7,7 @@
       <h1>{{ project.name }}</h1>
       <p>{{ project.description }}</p>
       <div class="link-item" v-for="link in project.links">
-          
+
           <a :href="link.src" target="_blank">
               <span class="icon-wrapper">
                   <v-img :src="link.icon" class="link-icon"></v-img>
