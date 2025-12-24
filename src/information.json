@@ -183,6 +183,66 @@
             "logo" : "mdi-linkedin",
             "hyperlink": "https://www.linkedin.com/in/sai-suhrut-sala/"
         }
+    ],
+        "ExperienceList": [
+        {
+            "company": "Goldman Sachs",
+            "logo": "/logos/goldmansachs.svg",
+            "role": "Software Engineering Analyst",
+            "location": "Salt Lake City, Utah",
+            "startDate": "Feb 2025",
+            "endDate": "Present",
+            "summary": "Led data platform modernization efforts by migrating Spark-based calculators to Snowflake and replacing legacy services with Snowflake UDTFs to cut latency and improve data integrity.",
+            "responsibilities": [
+                "Led migration of Spark-based financial calculators from an HDFS-backed datastore to Snowflake, redesigning data models and consolidating 10 legacy tables into 4, reducing storage footprint and improving query performance.",
+                "Designed and enforced schemas with primary keys over semi/unstructured data, enabling data integrity and reliable joins during the transition from structured to unstructured storage.",
+                "Replaced Alloy Services (HTTP/JSON APIs) with Snowflake UDTFs via the Spark–Snowflake connector, eliminating serialization and network overhead and reducing processing latency by ~50%, while enforcing compliant access controls."
+            ],
+            "tags": ["Spark", "Snowflake", "UDTF", "Data Engineering"]
+        },
+        {
+            "company": "Eccles School of Business",
+            "logo": "/logos/eccles.svg",
+            "role": "Teaching Assistant",
+            "location": "Salt Lake City, Utah",
+            "startDate": "Jan 2022",
+            "endDate": "Jul 2023",
+            "summary": "Supported coursework and grading for the Web-Based Applications course.",
+            "responsibilities": [
+                "Assisted students with assignments, projects, and clarifying doubts in the Web-Based Applications course.",
+                "Evaluated and graded assignments, ensuring fair and consistent assessment of student work."
+            ],
+            "tags": ["Teaching", "TA"]
+        },
+        {
+            "company": "FactSet",
+            "logo": "/logos/factset.svg",
+            "location": "Hyderabad, India",
+            "tags": ["Consul", "ASP.NET", "Web API", "Vue.js"],
+            "positions": [
+                {
+                    "title": "Software Engineer I",
+                    "startDate": "Jun 2022",
+                    "endDate": "Jul 2023",
+                    "summary": "Led feature development and implemented high-availability mechanisms.",
+                    "responsibilities": [
+                        "Led development of a file explorer using a custom Web API and Vue.js, cutting server access time by 60%.",
+                        "Implemented a Consul-based leader election mechanism for failover, achieving 99% uptime and enhanced server reliability.",
+                        "Engineered services improvements that boosted service uptime and server efficiency by 90%."
+                    ]
+                },
+                {
+                    "title": "Software Engineering Intern",
+                    "startDate": "Jan 2022",
+                    "endDate": "May 2022",
+                    "summary": "Contributed to backend and frontend components for internal web applications.",
+                    "responsibilities": [
+                        "Contributed to a web application using Consul, ASP.NET, and Web API to improve service reliability.",
+                        "Assisted in building a file explorer feature using a custom Web API and Vue.js."
+                    ]
+                }
+            ]
+        }
     ]
 
 }
