@@ -60,55 +60,44 @@ export default {
       window.open(link, "_blank");
     },
     getTop3Languages(languagePercentages) {
-      const top3Languages = Object.entries(languagePercentages)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 3)
-        .map(([key, value]) => `${key}: ${value}%`)
-        .join(", ");
+      try {
+        const top3Languages = Object.entries(languagePercentages)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 3)
+          .map(([key, value]) => `${key}: ${value}%`)
+          .join(", ");
 
-      return top3Languages;
-    },
-    async fetchWithRetry(url, useToken = false) {
-      const token = import.meta.env.VITE_GITHUB_TOKEN;
-      const headers = useToken && token ? { Authorization: `Bearer ${token}` } : {};
-      const response = await fetch(url, { headers });
-
-      if (response.status === 403 && !useToken) {
-        // Retry with token if rate-limited or forbidden
-        console.log("retrying with token")
-        console.log(token)
-        return this.fetchWithRetry(url, true);
+        return top3Languages;
+      } catch (e) {
+        console.error(e);
+        return '';
       }
-
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${url}`);
-      }
-
-      return await response.json();
     },
   },
   async mounted() {
     try {
-      const data = await this.fetchWithRetry("https://api.github.com/users/suhrusai/repos?type=public&sort=updated&direction=desc&per_page=200");
+      const response = await fetch("https://api.github.com/users/suhrusai/repos?type=public&sort=updated&direction=desc&per_page=200");
+      if (!response.ok) {
+        throw new Error("Failed to fetch pinned repositories");
+      }
+      let data = await response.json();
 
       // Exclude the repository named 'suhrusai'
-      const filteredRepos = data.filter(repo => repo.name !== 'suhrusai');
+      data = data.filter(repo => repo.name !== 'suhrusai');
 
-      this.totalRequests = filteredRepos.length + 1;
+      this.totalRequests = data.length + 1;
       this.doneRequests = 1;
-
-      for (const repo of filteredRepos) {
-        const languages = await this.fetchWithRetry(`${repo.url}/languages`);
+      for (let i = 0; i < data.length; i++) {
+        const languages = await (await fetch(data[i].url + "/languages")).json();
         const totalBytes = Object.values(languages).reduce((total, bytes) => total + bytes, 0);
         const percentages = {};
         for (const [language, bytes] of Object.entries(languages)) {
           percentages[language] = ((bytes / totalBytes) * 100).toFixed(2);
+          data[i].languagePercentages = percentages;
         }
-        repo.languagePercentages = percentages;
         this.doneRequests += 1;
       }
-
-      this.pinnedRepos = filteredRepos;
+      this.pinnedRepos = data;
       this.loading = false;
     } catch (error) {
       this.error = error.message;
@@ -117,7 +106,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .error-message {
