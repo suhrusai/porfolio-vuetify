@@ -9,14 +9,16 @@
                         <h1>Sai Suhrut</h1>
                         <div class="d-flex justify-content-center align-items-center" style="gap: 10px;">
                             <a :href="social.hyperlink"
-                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none icon-medium"
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none"
+                                style="font-size: 32px;"
                                 target="_blank"
                                 v-for="social in socials" :key="social.hyperlink"
                             >
                                 <v-icon :icon="social.logo" class="icon-large"></v-icon>
                             </a>
                             <a href="https://github.com/suhrusai/suhrusai/blob/main/resume.pdf?raw=true"
-                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none icon-medium"
+                                class="socials-icon d-flex justify-content-center align-items-center text-decoration-none"
+                                style="font-size: x-large;"
                                 target="_blank"
                             >
                                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135686.png" class="social-img" />
@@ -94,14 +96,15 @@
                         <v-row>
                             <div class="d-flex flex-column" >
                                         <a :href="social.hyperlink"
-                                                        class="socials-icon font-body"
-                                                        target="_blank"
-                                                        v-for="social in socials" :key="social.hyperlink"
-                                                    >
-                                                    <v-icon :icon="social.logo" class="icon-medium">
-                                                    </v-icon>
-                                                    {{social.hyperlink}}
-                                                    </a>
+                                            class="socials-icon"
+                                            style="font-size: x-large;text-decoration: none;"
+                                            target="_blank"
+                                            v-for="social in socials" :key="social.hyperlink"
+                                        >
+                                        <v-icon :icon="social.logo" >
+                                        </v-icon>
+                                        {{social.hyperlink}}
+                                        </a>
                                     </div>
                         </v-row>
                     </v-container>

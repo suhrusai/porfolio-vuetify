@@ -4,12 +4,12 @@
       <v-row class="li-row" align="start">
         <v-col cols="12" md="3" class="li-left d-flex">
           <div class="logo-wrap">
-            <!-- Uncomment to show logos: <v-img :src="resolveLogo(exp.logo)" :alt="`${exp.company} logo`" contain max-width="56" max-height="56" /> -->
+            <!-- <v-img :src="resolveLogo(exp.logo)" :alt="`${exp.company} logo`" contain max-width="56" max-height="56" /> -->
           </div>
           <div class="company-meta">
-            <div class="company-name">{{ exp.company }}</div>
+            <div><b>{{ exp.company }}</b></div>
             <div class="company-subtitle grey--text text--secondary">{{ exp.companySubtitle || exp.location || '' }}</div>
-            <div class="company-range grey--text caption">{{ hasPositions(exp) ? overallRange(exp.positions) : formatRange(exp.startDate, exp.endDate) }}</div>
+            <!-- <div class="company-range grey--text caption">{{ hasPositions(exp) ? overallRange(exp.positions) : formatRange(exp.startDate, exp.endDate) }}</div> -->
           </div>
         </v-col>
 
@@ -89,6 +89,7 @@ function overallRange(positions?: Position[]) {
   const starts = positions.map(p => p.startDate).filter(Boolean) as string[]
   const ends = positions.map(p => p.endDate).filter(Boolean) as string[]
   const earliest = starts.length ? starts.reduce((a, b) => (a < b ? a : b)) : ''
+  // if any position has null endDate, consider Present
   const hasPresent = positions.some(p => !p.endDate)
   const latest = hasPresent ? 'Present' : (ends.length ? ends.reduce((a, b) => (a > b ? a : b)) : '')
   return earliest ? `${earliest} — ${latest}` : ''
@@ -106,17 +107,15 @@ function resolveLogo(logo?: string) {
 </script>
 
 <style scoped>
-.li-entry { padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: var(--font-body); }
+.li-entry { padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: large;}
 .li-row { gap: 0; }
 .li-left { display: flex; align-items: flex-start; }
 .logo-wrap { margin-right: 12px; }
 .company-meta { display: flex; flex-direction: column; }
-.company-name { font-weight: 600; font-size: var(--font-subheading); }
-.company-subtitle { font-size: 0.875rem; }
 .company-range { margin-top: 4px; }
 .li-right { padding-left: 0.5rem; }
 .pos-head { margin-bottom: 4px; }
-.pos-title { font-weight: 600; font-size: var(--font-subheading); }
+.pos-title { font-weight: 600; }
 .pos-summary { margin-bottom: 6px; }
 .pos-list { margin: 0.25rem 0 0 1rem; padding: 0; }
 ul { margin: 0; padding: 0; }
