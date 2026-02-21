@@ -4,7 +4,7 @@
             <v-col cols="3" class="profile-picture-section">
                 <v-container  id="overview">
                     <br>
-                    <v-img src="https://media.licdn.com/dms/image/v2/D5603AQGsx5NqlNlyaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726630741943?e=1737590400&v=beta&t=kqHmdxkoNBLW44L250UVtB90YsmIaCNp1_XnJetMTI8" class="profile-pic"> </v-img>
+                    <v-img src="https://github.com/suhrusai/suhrusai/blob/main/porfolio-images/Profile%20Pic.jpeg?raw=true" class="profile-pic"> </v-img>
                     <div class="d-flex flex-column  align-items-center">
                         <h1>Sai Suhrut</h1>
                         <div class="d-flex justify-content-center align-items-center" style="gap: 10px;">
