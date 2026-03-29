@@ -21,3 +21,18 @@
 .socials-icon:hover{
     color: rgb(53, 53, 53)
 }
+
+/* Global font-size variables (used across components) */
+:root {
+  --font-heading: 1.5rem; /* ~24px */
+  --font-subheading: 1.125rem; /* ~18px */
+  --font-body: 1rem; /* 16px */
+}
+
+/* Utility classes */
+.font-heading { font-size: var(--font-heading); }
+.font-subheading { font-size: var(--font-subheading); }
+.font-body { font-size: var(--font-body); }
+.icon-large { font-size: 2rem; }
+.icon-medium { font-size: 1.5rem; }
+.social-img { width: 32px; height: 32px; }

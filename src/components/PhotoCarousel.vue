@@ -13,7 +13,6 @@
         class="d-flex align-center justify-center ma-2"
         elevation="2"
         height="400"
-        max-width="600"
       >
         <div class="image-container">
           <v-progress-circular
