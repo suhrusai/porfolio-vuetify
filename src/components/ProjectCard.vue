@@ -1,20 +1,26 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import Card from '@/components/ui/Card.vue'
 import Separator from '@/components/ui/Separator.vue'
 import Icon from '@/components/Icon.vue'
 import ImageCarousel from '@/components/ImageCarousel.vue'
 import type { ProjectEntry } from '@/lib/portfolio'
 
-defineProps<{ project: ProjectEntry; reversed?: boolean }>()
+const props = defineProps<{ project: ProjectEntry; reversed?: boolean }>()
+
+const hasImages = computed(() => (props.project.images?.length ?? 0) > 0)
 </script>
 
 <template>
   <Card class="overflow-hidden">
     <div
-      class="grid gap-0 lg:grid-cols-2"
-      :class="reversed ? 'lg:[&>*:first-child]:order-2' : ''"
+      class="grid gap-0"
+      :class="[
+        hasImages ? 'lg:grid-cols-2' : '',
+        hasImages && reversed ? 'lg:[&>*:first-child]:order-2' : '',
+      ]"
     >
-      <div class="bg-muted/40 p-5 sm:p-6">
+      <div v-if="hasImages" class="bg-muted/40 p-5 sm:p-6">
         <ImageCarousel :images="project.images" :alt="project.name" />
       </div>
 
@@ -23,6 +29,20 @@ defineProps<{ project: ProjectEntry; reversed?: boolean }>()
         <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
           {{ project.description }}
         </p>
+
+        <ul
+          v-if="project.highlights?.length"
+          class="mt-4 space-y-2 text-sm text-muted-foreground"
+        >
+          <li
+            v-for="(h, hi) in project.highlights"
+            :key="hi"
+            class="relative pl-5"
+          >
+            <span class="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-primary/60" />
+            {{ h }}
+          </li>
+        </ul>
 
         <div class="mt-5 space-y-2">
           <div

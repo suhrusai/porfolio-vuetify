@@ -6,6 +6,8 @@ export interface EducationEntry {
   GraducationMonth: string
   DegreeName: string
   logoSrc: string
+  location?: string
+  gpa?: string
 }
 
 export interface ProjectLink {
@@ -20,6 +22,7 @@ export interface ProjectEntry {
   techstack: Record<string, string[]>
   images: string[]
   links?: ProjectLink[]
+  highlights?: string[]
 }
 
 export interface SocialEntry {
@@ -85,13 +88,56 @@ export function socialLabel(logo: string): string {
 
 export const skills: { label: string; items: string[] }[] = [
   {
-    label: 'Frontend',
-    items: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Vue.js', 'ASP.NET', 'Bootstrap', 'Vuetify'],
+    label: 'Languages',
+    items: ['Java', 'Python', 'C#', 'TypeScript', 'JavaScript', 'SQL'],
   },
-  { label: 'Backend', items: ['.NET Framework', '.NET Core', 'Web API', 'Python', 'Node.js'] },
-  { label: 'Deployment & Automation', items: ['GitHub Actions', 'PowerShell'] },
-  { label: 'Languages', items: ['C#', 'Java', 'Python'] },
+  {
+    label: 'Frameworks & Libraries',
+    items: ['Spring Boot', 'ASP.NET Core', '.NET Core', 'Node.js', 'Vue.js', 'React'],
+  },
+  {
+    label: 'Data & Databases',
+    items: [
+      'Apache Spark',
+      'Polars',
+      'Snowflake',
+      'HDFS',
+      'PostgreSQL',
+      'MongoDB',
+      'Firebase Firestore',
+      'Tableau',
+    ],
+  },
+  {
+    label: 'Cloud & DevOps',
+    items: ['AWS (EC2, S3, Lambda)', 'Docker', 'GitHub Actions'],
+  },
+  {
+    label: 'AI & Developer Tools',
+    items: ['Ollama (Local LLMs)', 'MCP', 'GitHub Copilot', 'Devin AI'],
+  },
 ]
+
+export interface AwardEntry {
+  title: string
+  issuer: string
+  description: string
+}
+
+export const awards: AwardEntry[] = [
+  {
+    title: 'Blue Ribbon Award',
+    issuer: 'FactSet Research Systems',
+    description: 'Recognized as a top 10% performer.',
+  },
+  {
+    title: '2nd Prize — Coding Competition',
+    issuer: 'IEEE College Chapter',
+    description: 'Placed second in the coding competition held by the Institute of IEEE.',
+  },
+]
+
+export const LOCATION = 'Salt Lake City, UT'
 
 export const RESUME_URL =
   'https://github.com/suhrusai/suhrusai/blob/main/resume.pdf?raw=true'

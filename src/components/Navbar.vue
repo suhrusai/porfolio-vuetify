@@ -8,8 +8,10 @@ import { RESUME_URL } from '@/lib/portfolio'
 const sections = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
+  { id: 'education', label: 'Education' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
+  { id: 'awards', label: 'Awards' },
   { id: 'repositories', label: 'Repos' },
   { id: 'contact', label: 'Contact' },
 ]
@@ -76,7 +78,7 @@ onBeforeUnmount(() => {
         <span class="hidden sm:inline">Sai Suhrut Sala</span>
       </a>
 
-      <nav class="hidden items-center gap-1 md:flex">
+      <nav class="hidden items-center gap-1 lg:flex">
         <button
           v-for="s in sections"
           :key="s.id"
@@ -103,7 +105,7 @@ onBeforeUnmount(() => {
         <Button
           variant="ghost"
           size="icon"
-          class="md:hidden"
+          class="lg:hidden"
           aria-label="Toggle navigation menu"
           @click="menuOpen = !menuOpen"
         >
@@ -120,7 +122,7 @@ onBeforeUnmount(() => {
     >
       <div
         v-if="menuOpen"
-        class="border-b border-border bg-background md:hidden"
+        class="border-b border-border bg-background lg:hidden"
       >
         <nav class="container flex flex-col py-2">
           <button
