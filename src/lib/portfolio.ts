@@ -89,27 +89,36 @@ export function socialLabel(logo: string): string {
 export const skills: { label: string; items: string[] }[] = [
   {
     label: 'Languages',
-    items: ['Java', 'Python', 'C#', 'JavaScript', 'TypeScript', 'SQL'],
+    items: ['Java', 'Python', 'C#', 'TypeScript', 'JavaScript', 'SQL'],
   },
   {
-    label: 'Frameworks & Backend',
-    items: ['Spring Boot', 'ASP.NET Core', '.NET Core', 'React', 'Vue.js'],
+    label: 'Frameworks & Libraries',
+    items: ['Spring Boot', 'ASP.NET Core', '.NET Core', 'Node.js', 'Vue.js', 'React'],
   },
   {
     label: 'Data & Databases',
-    items: ['Apache Spark', 'Snowflake', 'PostgreSQL', 'MongoDB', 'HDFS', 'Firebase Firestore'],
+    items: [
+      'Apache Spark',
+      'Polars',
+      'Snowflake',
+      'HDFS',
+      'PostgreSQL',
+      'MongoDB',
+      'Firebase Firestore',
+      'Tableau',
+    ],
   },
   {
     label: 'Cloud & DevOps',
     items: ['AWS (EC2, S3, Lambda)', 'Docker', 'CI/CD', 'GitHub Actions'],
   },
   {
-    label: 'APIs & Architecture',
-    items: ['REST APIs', 'Microservices', 'Distributed Systems', 'JWT'],
+    label: 'Architecture & Practices',
+    items: ['REST APIs', 'Microservices', 'Distributed Systems', 'JWT', 'Agile / Scrum'],
   },
   {
     label: 'AI & Developer Tools',
-    items: ['Ollama (Local LLMs)', 'GitHub Copilot', 'Devin AI', 'Tableau', 'Git', 'Agile / Scrum'],
+    items: ['Ollama (Local LLMs)', 'MCP', 'GitHub Copilot', 'Devin AI', 'Git'],
   },
 ]
 
