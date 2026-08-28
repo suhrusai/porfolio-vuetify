@@ -11,7 +11,7 @@ import { skills } from '@/lib/portfolio'
       <SectionHeading
         eyebrow="Skills"
         title="Tools I work with"
-        description="Technologies I reach for across the stack, from UI to deployment."
+        description="Technologies I reach for across the stack — from backend and data engineering to cloud and AI tooling."
       />
       <div class="grid gap-5 sm:grid-cols-2">
         <Card v-for="group in skills" :key="group.label" class="p-6">

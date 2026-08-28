@@ -9,8 +9,8 @@ import { projects } from '@/lib/portfolio'
     <div class="container">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected work"
-        description="A mix of professional, academic and personal projects across web, mobile and games."
+        title="Things I've built"
+        description="Professional, academic and side projects — spanning AI, web, mobile and game development."
       />
       <div class="space-y-8">
         <ProjectCard
