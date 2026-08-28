@@ -110,15 +110,11 @@ export const skills: { label: string; items: string[] }[] = [
   },
   {
     label: 'Cloud & DevOps',
-    items: ['AWS (EC2, S3, Lambda)', 'Docker', 'CI/CD', 'GitHub Actions'],
-  },
-  {
-    label: 'Architecture & Practices',
-    items: ['REST APIs', 'Microservices', 'Distributed Systems', 'JWT', 'Agile / Scrum'],
+    items: ['AWS (EC2, S3, Lambda)', 'Docker', 'GitHub Actions'],
   },
   {
     label: 'AI & Developer Tools',
-    items: ['Ollama (Local LLMs)', 'MCP', 'GitHub Copilot', 'Devin AI', 'Git'],
+    items: ['Ollama (Local LLMs)', 'MCP', 'GitHub Copilot', 'Devin AI'],
   },
 ]
 
