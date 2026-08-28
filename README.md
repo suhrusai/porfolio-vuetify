@@ -1,57 +1,38 @@
-# essentials
+# Portfolio — Sai Suhrut Sala
 
-## Project setup
+Personal portfolio site. Built with **Vue 3 + Vite + TypeScript**, styled with
+**Tailwind CSS** and a **shadcn**-style component layer (design tokens as CSS
+variables, `cva` variants, `cn` helper).
 
-```
-# yarn
-yarn
+## Features
 
-# npm
-npm install
+- Light / dark mode with system preference + `localStorage` persistence and no
+  flash of the wrong theme on load.
+- Fully responsive (mobile-first) with a collapsible mobile nav.
+- Content-driven: everything renders from [`src/information.json`](src/information.json).
+- Live GitHub repositories section.
+- Accessible: skip link, focus-visible rings, semantic landmarks,
+  `prefers-reduced-motion` respected.
 
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
+## Project structure
 
 ```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
+src/
+  assets/styles/globals.css   Tailwind entry + design tokens (:root / .dark)
+  lib/utils.ts                cn() class-merge helper
+  lib/portfolio.ts            typed access to information.json
+  composables/useColorMode.ts theme state
+  components/ui/              shadcn-style primitives (Button, Card, Badge, Separator)
+  components/                 Navbar, Footer, Icon, ImageCarousel, ...
+  components/sections/        Hero, About, Skills, Education, Experience, Projects, Repositories, Contact
 ```
 
-### Lints and fixes files
+## Commands
 
+```bash
+npm install       # install dependencies
+npm run dev       # dev server at http://localhost:3000
+npm run build     # type-check + production build to dist/
+npm run preview   # preview the production build
+npm run deploy    # build + firebase deploy
 ```
-# yarn
-yarn lint
-
-# npm
-npm run lint
-
-# pnpm
-pnpm lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).

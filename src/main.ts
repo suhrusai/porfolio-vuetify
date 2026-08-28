@@ -1,20 +1,8 @@
-/**
- * main.ts
- *
- * Bootstraps Vuetify and other plugins then mounts the App`
- */
-
-// Components
-import App from './App.vue'
-
-// Composables
 import { createApp } from 'vue'
+import App from './App.vue'
+import './assets/styles/globals.css'
+import { initColorMode } from './composables/useColorMode'
 
-// Plugins
-import { registerPlugins } from '@/plugins'
+initColorMode()
 
-const app = createApp(App)
-
-registerPlugins(app)
-
-app.mount('#app')
+createApp(App).mount('#app')
