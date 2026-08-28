@@ -2,7 +2,7 @@
 import SectionHeading from '@/components/SectionHeading.vue'
 import Button from '@/components/ui/Button.vue'
 import Icon from '@/components/Icon.vue'
-import { socials, socialIconName, socialLabel } from '@/lib/portfolio'
+import { socials, socialIconName, socialLabel, LOCATION } from '@/lib/portfolio'
 
 function displayValue(hyperlink: string) {
   return hyperlink.replace(/^mailto:/, '').replace(/^https?:\/\/(www\.)?/, '')
@@ -24,6 +24,11 @@ const primaryEmail =
           title="Let's build something"
           description="I'm open to software engineering roles and interesting collaborations. The fastest way to reach me is email."
         />
+
+        <p class="mb-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+          <Icon name="mapPin" :size="14" />
+          Based in {{ LOCATION }}
+        </p>
 
         <div class="flex flex-wrap gap-3">
           <Button as="a" :href="primaryEmail">

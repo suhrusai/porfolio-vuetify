@@ -7,6 +7,7 @@ import Skills from '@/components/sections/Skills.vue'
 import Education from '@/components/sections/Education.vue'
 import Experience from '@/components/sections/Experience.vue'
 import Projects from '@/components/sections/Projects.vue'
+import Awards from '@/components/sections/Awards.vue'
 import Repositories from '@/components/sections/Repositories.vue'
 import Contact from '@/components/sections/Contact.vue'
 </script>
@@ -28,6 +29,7 @@ import Contact from '@/components/sections/Contact.vue'
     <Education />
     <Experience />
     <Projects />
+    <Awards />
     <Repositories />
     <Contact />
   </main>

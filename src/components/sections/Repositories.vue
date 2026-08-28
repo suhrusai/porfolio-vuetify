@@ -46,7 +46,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="repositories" class="scroll-mt-20 bg-muted/40 py-20 sm:py-28">
+  <section id="repositories" class="scroll-mt-20 py-20 sm:py-28">
     <div class="container">
       <SectionHeading
         eyebrow="GitHub"

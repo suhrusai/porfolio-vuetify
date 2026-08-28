@@ -28,12 +28,22 @@ import { education } from '@/lib/portfolio'
           <div class="min-w-0">
             <h3 class="font-semibold leading-snug">{{ entry.CollegeName }}</h3>
             <p class="mt-1 text-sm text-muted-foreground">{{ entry.DegreeName }}</p>
-            <p
-              class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground"
+            <div
+              class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-muted-foreground"
             >
-              <Icon name="graduation" :size="14" />
-              {{ entry.GraducationMonth }} {{ entry.GraducationYear }}
-            </p>
+              <span class="inline-flex items-center gap-1.5">
+                <Icon name="graduation" :size="14" />
+                {{ entry.GraducationMonth }} {{ entry.GraducationYear }}
+              </span>
+              <span v-if="entry.location" class="inline-flex items-center gap-1.5">
+                <Icon name="mapPin" :size="14" />
+                {{ entry.location }}
+              </span>
+              <span v-if="entry.gpa" class="inline-flex items-center gap-1.5">
+                <Icon name="star" :size="14" />
+                GPA {{ entry.gpa }}
+              </span>
+            </div>
           </div>
         </Card>
       </div>

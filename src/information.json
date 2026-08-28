@@ -2,21 +2,39 @@
     "Overview" : " Hello! I’m Sai Suhrut Sala, a Master’s student in Information Systems at the University of Utah and a Software Engineer with a background in Computer Science from Osmania University. Experienced in full-stack development, I specialize in creating efficient, user-centric solutions using technologies like C#, .NET, and Vue.js. Committed to innovation and efficiency, my work focuses on enhancing technology to improve everyday life. Join me in exploring the potential of technology to transform our world.",
     "Education" : [
         {
-            "CollegeName": "Osmania University",
+            "CollegeName": "Vasavi College of Engineering — Osmania University",
             "GraducationYear" : 2022,
-            "GraducationMonth" : "June",
-            "DegreeName": "B.E Computer Science Engineering",
+            "GraducationMonth" : "July",
+            "DegreeName": "B.E. Computer Science Engineering",
+            "location": "Hyderabad, India",
+            "gpa": "8.22 / 10",
             "logoSrc" : "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/education/osmania-university.webp"
         },
         {
-            "CollegeName": "David Eccless school of business- University of Utah",
+            "CollegeName": "University of Utah, David Eccles School of Business",
             "GraducationYear" : 2024,
             "GraducationMonth" : "December",
-            "DegreeName": "M.S Information Systems",
+            "DegreeName": "M.S. Information Systems",
+            "location": "Salt Lake City, UT",
+            "gpa": "3.78 / 4",
             "logoSrc" : "https://raw.githubusercontent.com/suhrusai/suhrusai/refs/heads/main/porfolio-images/education/university-of-utah.webp"
         }
     ],
     "Projects": [
+        {
+            "name" : "AI-Powered Discord Assistant",
+            "description" : "A Discord assistant that runs large language models locally through Ollama, giving each server private, low-cost AI without sending conversations to a third-party API. It keeps per-user chat memory with context compression so long-running threads stay coherent, and exposes an MCP-based tool layer that lets the model dynamically call external tools mid-conversation.",
+            "techstack" : {
+                "AI / Inference" : ["Ollama", "Local LLMs", "MCP (Model Context Protocol)"],
+                "Back-end" : ["Python", "Async inference pipeline", "Discord API"]
+            },
+            "images" : [],
+            "highlights" : [
+                "Local LLM inference via Ollama with multi-user chat memory and context compression.",
+                "Async inference pipeline that keeps the bot responsive under concurrent requests.",
+                "MCP-based tool integration enabling the LLM to dynamically call external tools."
+            ]
+        },
         {
             "name" : "AXIO Centripetal Training",
             "description" : "AXIO Centripetal Training is a mobile workout application designed to educate and guide AXIO Trainer customers. The project aimed to improve stability, functional strength, and injury prevention through a user-friendly and configurable mobile application. Developed using FlutterFlow, the app features curated workout playlists, a timer, and a robust backend architecture powered by Firebase. The project also included an admin control panel for easy management and maintenance of the contents in the application",
@@ -201,18 +219,18 @@
             "tags": ["Spark", "Snowflake", "UDTF", "Data Engineering"]
         },
         {
-            "company": "Eccles School of Business",
+            "company": "University of Utah",
             "logo": "/logos/eccles.svg",
-            "role": "Teaching Assistant",
+            "role": "Graduate Teaching Assistant",
             "location": "Salt Lake City, Utah",
-            "startDate": "Jan 2022",
-            "endDate": "Jul 2023",
-            "summary": "Supported coursework and grading for the Web-Based Applications course.",
+            "startDate": "Aug 2024",
+            "endDate": "Dec 2024",
+            "summary": "Supported a full-stack web development course, mentoring students and running lab sessions.",
             "responsibilities": [
-                "Assisted students with assignments, projects, and clarifying doubts in the Web-Based Applications course.",
-                "Evaluated and graded assignments, ensuring fair and consistent assessment of student work."
+                "Mentored 60+ students in full-stack web development (PHP, MySQL, HTML, CSS, JavaScript), strengthening their debugging and database design skills.",
+                "Conducted lab sessions and graded 200+ assignments, giving hands-on guidance on database design, server-side development with PHP/MySQL, and debugging production-style web applications."
             ],
-            "tags": ["Teaching", "TA"]
+            "tags": ["Teaching", "PHP", "MySQL"]
         },
         {
             "company": "FactSet",
