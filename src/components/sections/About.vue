@@ -5,8 +5,7 @@ import { overview } from '@/lib/portfolio'
 
 const highlights = [
   { value: '3+', label: 'Years building production software' },
-  { value: '1.8TB+', label: 'Financial data migrated at Goldman Sachs' },
-  { value: '99.99%', label: 'Service uptime delivered at FactSet' },
+  { value: 'M.S.', label: 'Information Systems, University of Utah' },
 ]
 </script>
 
@@ -18,7 +17,7 @@ const highlights = [
         <p class="text-lg leading-relaxed text-muted-foreground">
           {{ overview }}
         </p>
-        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
           <Card
             v-for="h in highlights"
             :key="h.label"
