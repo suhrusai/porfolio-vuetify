@@ -4,9 +4,8 @@ import Card from '@/components/ui/Card.vue'
 import { overview } from '@/lib/portfolio'
 
 const highlights = [
-  { value: '3+', label: 'Years of experience' },
-  { value: '10+', label: 'Shipped projects' },
-  { value: 'M.S.', label: 'Information Systems, Utah' },
+  { value: '3+', label: 'Years building production software' },
+  { value: 'M.S.', label: 'Information Systems, University of Utah' },
 ]
 </script>
 
@@ -18,7 +17,7 @@ const highlights = [
         <p class="text-lg leading-relaxed text-muted-foreground">
           {{ overview }}
         </p>
-        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
           <Card
             v-for="h in highlights"
             :key="h.label"
