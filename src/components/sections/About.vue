@@ -4,9 +4,9 @@ import Card from '@/components/ui/Card.vue'
 import { overview } from '@/lib/portfolio'
 
 const highlights = [
-  { value: '3+', label: 'Years of experience' },
-  { value: '10+', label: 'Shipped projects' },
-  { value: 'M.S.', label: 'Information Systems, Utah' },
+  { value: '3+', label: 'Years building production software' },
+  { value: '1.8TB+', label: 'Financial data migrated at Goldman Sachs' },
+  { value: '99.99%', label: 'Service uptime delivered at FactSet' },
 ]
 </script>
 
